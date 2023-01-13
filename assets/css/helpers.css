@@ -1,0 +1,13 @@
+html,
+body {
+  margin: 0px;
+}
+
+.content {
+    background-color: #0c0f15;
+    height: 100vh;
+}
+
+.hide {
+    display: none !important;
+}
