@@ -1,23 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-.tw-container {
-  display: flex;
-  /* justify-content: center;
-  align-items: center; */
-}
 .tw-container p {
-  /* font-size: 3rem;
-  padding: 0.5rem;
-  font-weight: bold;
   letter-spacing: 0.1rem;
-  text-align: center;
-  overflow: hidden; */
+  overflow: hidden;
 }
 .tw-container p span.typed-text {
   font-weight: normal;
 }
 .tw-container p span.cursor {
-  display: inline-block;
   background-color: #ccc;
   margin-left: 0.1rem;
   width: 3px;

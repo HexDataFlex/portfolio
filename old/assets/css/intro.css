@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+
+.intro-block {
+  text-align: left;
+  height: 90vh;
+}
+
+.intro-title {
+  color: white;
+  font-size: 40px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.intro-color {
+  color: #ff0037;
+}
+
+.intro-description {
+  color: white;
+  font-size: 30px;
+  font-family: "Ubuntu", sans-serif;
+}

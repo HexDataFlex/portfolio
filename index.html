@@ -1,64 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html class="dark">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Pixel's Portfolio</title>
+    <title></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./assets/css/spinner.css" />
-    <link rel="stylesheet" href="./assets/css/helpers.css" />
-    <link rel="stylesheet" href="./assets/css/title.css" />
-    <link rel="stylesheet" href="./assets/css/intro.css" />
-    <link rel="stylesheet" href="./assets/css/typewriter.css" />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
   </head>
-  <body>
-    <div class="loading" id="loading">
-      <div class="spinner" id="spinner">
-        <div class="cube1"></div>
-        <div class="cube2"></div>
-      </div>
-    </div>
+  <body style="background-color: #282c34">
+    <header aria-label="Site Header" class="bg-white dark:bg-gray-900">
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <div class="flex-1 md:flex md:items-center md:gap-12">
+            <a class="block text-teal-600 dark:text-teal-300" href="/">
+              <span class="sr-only">Home</span>
+              <img class="h-8" src="./assets/img/logo_a.png">
+            </a>
+          </div>
 
-    <div class="content hide" id="content">
-      <div class="title-text">ADAMO</div>
+          <div class="md:flex md:items-center md:gap-12">
+            <nav aria-label="Site Nav" class="hidden md:block">
+              <ul class="flex items-center gap-6 text-sm">
+                <li>
+                  <a
+                    class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    href="/"
+                  >
+                    About
+                  </a>
+                </li>
 
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col">
-            <div class="intro-block">
-              <p class="intro-title">
-                Hello, my name is <span class="intro-color">Adam</span>!
-              </p>
-              <div class="intro-description">
-                <div class="tw-container">
-                  <p>
-                    I'm <span class="typed-text intro-color"></span
-                    ><span class="cursor">&nbsp;</span>
-                  </p>
-                </div>
+                <li>
+                  <a
+                    class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    href="/"
+                  >
+                    Careers
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    href="/"
+                  >
+                    History
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    href="/"
+                  >
+                    Services
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    href="/"
+                  >
+                    Projects
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    href="/"
+                  >
+                    Blog
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="flex items-center gap-4">
+              <!-- <div class="sm:flex sm:gap-4">
+                  <a
+                    class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow dark:hover:bg-teal-500"
+                    href="/"
+                  >
+                    Login
+                  </a>
+      
+                  <div class="hidden sm:flex">
+                    <a
+                      class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+                      href="/"
+                    >
+                      Register
+                    </a>
+                  </div>
+                </div> -->
+
+              <div class="block md:hidden">
+                <button
+                  class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
-          <div class="col"></div>
         </div>
       </div>
-    </div>
+    </header>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./assets/js/spinner.js" async defer></script>
-    <script src="./assets/js/typewriter.js"></script>
+    <section>
+      <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+          <div
+            class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full"
+          >
+            <img
+              alt="Coding"
+              src="./assets/img/img2.png"
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+          </div>
+
+          <div class="lg:py-24">
+            <h2 class="text-white text-3xl font-bold sm:text-4xl">
+              Get a website
+            </h2>
+
+            <p class="mt-4 text-gray-300">
+              Did you want a website? If so, a professional website developer will build you a website for a small price! Everything included: search, login and anything you want!
+            </p>
+
+            <a
+              href="#"
+              class="mt-8 inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+            >
+              <span class="text-sm font-medium"> Get a website now </span>
+
+              <svg
+                class="ml-3 h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
